@@ -2,16 +2,17 @@ document.getElementById("feni_donate_btn").addEventListener("click", function (e
 
     event.preventDefault();
     let donate_money2 = document.getElementById("feni_donate_money").value;
-
-    if (!/\d/.test(donate_money2) || (donate_money2 < 0)) {
-        console.log(typeof donate_money2)
+    donate_money2 = parseFloat(donate_money2);
+    
+    if ((donate_money2 < 0) || (isNaN(donate_money2))) {
+        
         return alert("Invalid Donation Amount");
     }
 
 
     total_feni_amount = document.getElementById("feni_total_donate").innerHTML;
     total_feni_amount = parseFloat(total_feni_amount)
-    donate_money2 = parseFloat(donate_money2);
+  
 
     remaining_balance = document.getElementById("balance").innerHTML;
     remaining_balance = parseFloat(remaining_balance)
