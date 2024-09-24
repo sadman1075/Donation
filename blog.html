@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header class="pb-5">
+    <header class="sticky top-0 z-10 backdrop-blur  pb-5">
         <nav>
             <div class="navbar bg-nav-bg py-6">
                 <div class="navbar-start lg:ml-32">
@@ -54,47 +54,53 @@
     <main class="mt-5 ml-2 lg:ml-40 mr-2 lg:mr-40">
         <div>
             <h1 class="text-4xl font-bold mb-4">Important FAQ :-</h1>
-            <div class="collapse collapse-arrow bg-white">
+            <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What is a DOM manipulation?</div>
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                    <p class="text-justify">DOM manipulation in javascript is the process of interacting with the DOM
-                        API to change or modify
-                        an HTML document that will be displayed in a web browser. By manipulating the DOM, we can create
-                        web applications that update the data in a web page without refreshing the page. The DOM stands
-                        for Document Object Model.</p>
+                    <p class="text-justify">The Document Object Model (DOM) is a programming interface for web
+                        documents. It represents the structure of an HTML or XML document as a tree of objects, where
+                        each node corresponds to a part of the document (such as elements, attributes, and text). The
+                        DOM allows programming languages like JavaScript to interact with and manipulate the content,
+                        structure, and style of a webpage dynamically.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 mt-5">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Is DOM manipulation frontend or backend?</div>
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                    <p class="text-justify">In frontend development, DOM manipulation is typically performed using
-                        technologies such as
-                        JavaScript, HTML, and CSS. JavaScript, in particular, provides a wide array of built-in methods
-                        and APIs for traversing and manipulating the DOM, making it an indispensable tool for
-                        developers.</p>
+                    <p class="text-justify">To select an element from the DOM, you typically use JavaScript along with
+                        various methods provided by the DOM API. Here are some common ways to select elements: <br>
+                        Using getElementById <br>
+                        Using getElementsByClassName <br>
+                        Using getElementsByTagName <br>
+                        Using querySelector <br>
+                        Using querySelectorAll <br>
+                    </p>
                 </div>
             </div>
 
             <div class="collapse collapse-arrow bg-base-200 mt-5">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Why is the document called the Object Model?</div>
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
                 <div class="collapse-content">
-                    <p>Document is modeled of object and document in not only the structure of an object but it also
-                        includes the behavior of document structure and object that contains the elements like HTML tags
-                        and their attributes.</p>
+                    <p>Event delegation is a technique in the DOM that allows you to manage events efficiently by taking
+                        advantage of event bubbling. Instead of attaching event listeners to multiple child elements
+                        individually, you attach a single event listener to a common parent element. When an event
+                        occurs on any child element, it bubbles up to the parent, where you can handle it.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200 mt-5">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">what is an event and how can you define an event in HTML
-                    DOM?
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?
                 </div>
                 <div class="collapse-content">
-                    <p>An event is an action that occurs on a button or anchor tag. When we call the function to
-                        execute, we click a button or anchor tag. The process of invoking a function via the button or
-                        some action on the button with the help of JavaScript code, it’s called an event. </p>
+                    <p>JavaScript, the language of the web, empowers developers to create dynamic and interactive web
+                        pages. One of the key features that enables this interactivity is Document Object Model (DOM)
+                        manipulation. DOM manipulation allows developers to interact with and modify the structure,
+                        style, and content of web pages. </p>
                 </div>
             </div>
         </div>
