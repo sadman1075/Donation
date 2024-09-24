@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "button-color": "#B4F461",
+                        "nav-bg": "#F9F7F3"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class=" top-0 pb-5">
+        <nav>
+            <div class="navbar bg-nav-bg py-6">
+                <div class="navbar-start lg:ml-32">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a href="./index.html" class="btn bg-button-color text-xl">Home</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="flex items-center gap-4">
+                        <img src="./assets/logo.png" alt="" srcset="">
+                        <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+                    </div>
+                </div>
+                <div class="navbar-end lg:mr-32">
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/coin.png" alt="" srcset="">
+                        <h1 class="font-semibold text-xl">5500</h1>
+                        <h1 class="font-semibold text-xl">BDT</h1>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mt-5 flex justify-center gap-5">
+            <button class="btn bg-button-color text-xl">Donation</button>
+            <button class="btn bg-base-200 text-xl">History</button>
+        </div>
+    </header>
+
+    <main class="mt-5 ml-2 lg:ml-40 mr-2 lg:mr-40">
+        <div>
+            <h1 class="text-4xl font-bold mb-4">Important FAQ :-</h1>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is a DOM manipulation?</div>
+                <div class="collapse-content">
+                    <p class="text-justify">DOM manipulation in javascript is the process of interacting with the DOM
+                        API to change or modify
+                        an HTML document that will be displayed in a web browser. By manipulating the DOM, we can create
+                        web applications that update the data in a web page without refreshing the page. The DOM stands
+                        for Document Object Model.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 mt-5">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Is DOM manipulation frontend or backend?</div>
+                <div class="collapse-content">
+                    <p class="text-justify">In frontend development, DOM manipulation is typically performed using
+                        technologies such as
+                        JavaScript, HTML, and CSS. JavaScript, in particular, provides a wide array of built-in methods
+                        and APIs for traversing and manipulating the DOM, making it an indispensable tool for
+                        developers.</p>
+                </div>
+            </div>
+            
+            <div class="collapse collapse-arrow bg-base-200 mt-5">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Why is the document called the Object Model?</div>
+                <div class="collapse-content">
+                    <p>Document is modeled of object and document in not only the structure of an object but it also
+                        includes the behavior of document structure and object that contains the elements like HTML tags
+                        and their attributes.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 mt-5">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">what is an event and how can you define an event in HTML
+                    DOM?
+                </div>
+                <div class="collapse-content">
+                    <p>An event is an action that occurs on a button or anchor tag. When we call the function to
+                        execute, we click a button or anchor tag. The process of invoking a function via the button or
+                        some action on the button with the help of JavaScript code, it’s called an event. </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-nav-bg p-8 mt-20">
+        <p class="text-center font-semibold">Copyright © 2024 - All right reserved</p>
+
+    </footer>
+
+</body>
+
+</html>
