@@ -2,16 +2,17 @@ document.getElementById("quota_donate_btn").addEventListener("click", function (
 
     event.preventDefault();
     let donate_money3 = document.getElementById("quota_donate_money").value;
+    if ((isNaN(donate_money3))) {
+        return alert("Invalid Donation Amount");
+    }
     donate_money3 = parseFloat(donate_money3);
-    if ((donate_money3 < 0) || (isNaN(donate_money3))) {
-        
+    if ((donate_money3 < 0)) {
         return alert("Invalid Donation Amount");
     }
 
-
     total_quota_amount = document.getElementById("quota_total_donate").innerHTML;
     total_quota_amount = parseFloat(total_quota_amount)
- 
+
     remaining_balance = document.getElementById("balance").innerHTML;
     remaining_balance = parseFloat(remaining_balance)
 

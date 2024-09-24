@@ -2,12 +2,18 @@ document.getElementById("noakhali_donate_btn").addEventListener("click", functio
 
     event.preventDefault();
     let donate_money1 = document.getElementById("noakhali_donate_money").value;
-    donate_money1 = parseFloat(donate_money1);
 
-    if ((donate_money1 < 0) || (isNaN(donate_money1))) {
-        
+    if ( (isNaN(donate_money1))) {
         return alert("Invalid Donation Amount");
     }
+
+    donate_money1 = parseFloat(donate_money1);
+
+    
+    if ((donate_money1 < 0) ) {
+        return alert("Invalid Donation Amount");
+    }
+   
 
 
     total_noakhali_amount = document.getElementById("noakhali_total_donate").innerHTML;
